@@ -556,6 +556,7 @@ private extension SKPhotoBrowser {
         closeButton = SKCloseButton(frame: .zero)
         closeButton.addTarget(self, action: #selector(closeButtonPressed(_:)), for: .touchUpInside)
         closeButton.isHidden = !SKPhotoBrowserOptions.displayCloseButton
+        closeButton.showFrame = CGRect(x: 12, y: 32, width: 20, height: 20)
         view.addSubview(closeButton)
     }
     
